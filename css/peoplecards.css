@@ -1,0 +1,175 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #eee;
+}
+body a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.spacingrow{
+    height: 200px;
+}
+
+.position2{
+  position: relative ;
+  margin-top: 0px;
+  margin-left: 10%;
+  top: 20%;
+  left: 10%;
+  height: 380px;
+  width: 290px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.profilecard:hover .profilecard-front {
+  transform: rotateX(-180deg);
+}
+.profilecard:hover .profilecard-back {
+  transform: rotateX(0deg);
+}
+
+.profilecard-front {
+  height: 100%;
+  width: 100%;
+  /* background-image: url(/images/rathi_ishika.jpg); */
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+
+}
+.profilecard-front h2 {
+  margin: 20% auto 35% auto;
+  /* position: absolute; */
+  margin-top: 120%;
+  text-align: center;
+  font-size: 26px;
+  color: whitesmoke ;
+}
+.profilecard-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 2;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color:#ffffff;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+}
+
+.profilecard-back h2 {
+  margin: 20% auto 35% auto;
+  font-size: 26px;
+  line-height: 20px;
+}
+.profilecard-back h2 span {
+  font-size: 14px;
+  line-height: 6px;
+
+}
+
+.profilecard-back a {
+  height: 10px;
+  width: 20px;
+  padding: 5px 0px;
+  border-radius: 2px;
+  line-height: 1px;
+}
+.profilecard-back a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+
+.containerpeople{
+  margin-left: 200px;
+}
+
+#cardphoto-Harsh{
+  background-image: url(/images/h.jpg);
+}
+#cardphoto-Rohan{
+  background-image: url(/images/Rohan-Garg.jpg);
+}
+#cardphoto-rathi_ishika{
+  background-image: url(/images/rathi_ishika.jpg);
+}
+#cardphoto-Aditi-Yadav{
+  background-image: url(/images/Aditi-Yadav.jpeg);
+}
+
+/* .fixcardtext{
+  position: relative; 
+  top: -20px;
+} */
+
+#cardphoto-Surbhi-Gupta{
+  background-image: url(/images/Surbhi-Gupta.jpg);
+}
+#cardphoto-Harshita-Kukreja{
+  background-image: url(/images/Harshita-Kukreja.jpg);
+}
+#cardphoto-me-ROHITYADAV{
+  background-image: url(/images/me-ROHITYADAV.jpg);
+}
+#cardphoto-Aashi-Jain{
+  background-image: url(/images/Aashi-Jain.jpeg);
+}
+#cardphoto-Amulaya-Khurania{
+  background-image: url(/images/Amulaya-Khurania.jpg);
+}
+#cardphoto-Harsh-Pundir{
+  background-image: url(/images/Harsh-Pundir.jpg);
+}
+.profilecard{
+    margin-top: 20px;
+}
+@media screen and (min-width: 1000px){
+    .gapcard{
+        position: absolute;
+        width: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1150px)
+{
+    .gapcard{
+        position: relative ;
+        margin-top: 0px;
+        margin-left: 10%;
+        top: 20%;
+        left: 10%;
+        height: 380px;
+        width: 150px;
+     }
+ }
+@media screen and (min-width: 1199px)
+{
+    .gapcard{
+        position: relative ;
+        margin-top: 0px;
+        margin-left: 10%;
+        top: 20%;
+        left: 10%;
+        height: 380px;
+        width: 290px;
+
+    }
+}
