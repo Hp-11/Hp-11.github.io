@@ -10,7 +10,9 @@ body a {
   text-decoration: none;
 }
 
-
+a {
+  text-decoration: none;
+}
 .position2{
   position: relative ;
   margin-top: 0px;
@@ -22,13 +24,13 @@ body a {
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 600px;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 .profilecard:hover .profilecard-front {
-  transform: rotateX(-180deg);
+  transform: rotateY(-180deg);
 }
 .profilecard:hover .profilecard-back {
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
 }
 
 .profilecard-front {
@@ -42,7 +44,7 @@ body a {
   left: 0;
   background-color: #000000;
   backface-visibility: hidden;
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
   transition: 0.5s;
 
 }
@@ -62,7 +64,7 @@ body a {
   left: 2;
   background-color: #000000;
   backface-visibility: hidden;
-  transform: rotateX(180deg);
+  transform: rotateY(180deg);
   transition: 0.5s;
   color:#ffffff;
   padding-left: 2px;
@@ -93,49 +95,8 @@ body a {
   background-color: #fff;
 }
 
-
-.containerpeople{
-  margin-left: 200px;
-}
-
-#cardphoto-Harsh{
-  background-image: url(/images/h.jpg);
-}
-#cardphoto-Rohan{
-  background-image: url(/images/Rohan-Garg.jpg);
-}
-#cardphoto-rathi_ishika{
-  background-image: url(/images/rathi_ishika.jpg);
-}
-#cardphoto-Aditi-Yadav{
-  background-image: url(/images/Aditi-Yadav.jpeg);
-}
-
-/* .fixcardtext{
-  position: relative; 
-  top: -20px;
-} */
-
-#cardphoto-Surbhi-Gupta{
-  background-image: url(/images/Surbhi-Gupta.jpg);
-}
-#cardphoto-Harshita-Kukreja{
-  background-image: url(/images/Harshita-Kukreja.jpg);
-}
-#cardphoto-me-ROHITYADAV{
-  background-image: url(/images/me-ROHITYADAV.jpg);
-}
-#cardphoto-Aashi-Jain{
-  background-image: url(/images/Aashi-Jain.jpeg);
-}
-#cardphoto-Amulaya-Khurania{
-  background-image: url(/images/Amulaya-Khurania.jpg);
-}
-#cardphoto-Harsh-Pundir{
-  background-image: url(/images/Harsh-Pundir.jpg);
-}
 .profilecard{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 @media screen and (min-width: 1000px){
     .gapcard{

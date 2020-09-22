@@ -24,6 +24,7 @@
 }
 .footer-color{
   background-color: #32333d;
+ 
 }
 .img-one {
    /* filter: opacity(500%); */
@@ -78,14 +79,7 @@
    height: auto;
  }
  
-.top-cards {
-   padding-top: 0px;
-   width: 100% ;
-   height: auto;
- }
- .card-mid{
-   height: 250px;
- }
+
  
  .parallax-container {
    padding-top: 70px;
@@ -127,24 +121,23 @@
    margin: 0;
  }
  
- 
+ .circle_card{
+  margin-left: 10px;
+  margin-top: 150px;
+}
+
  div.a{
    line-height: 2;
    font-size: 16px;
  }
  .profile-row{
    margin-left: 100px;
-   
-
  }
-.circle_card{
-  
-}
+
 .position-1{
   position: relative ;
   float: left;
-  margin-top: 100px;
-  margin-left: 80%;
+  padding-left: 10px;
   top: 20%;
   left: 10%;
   height: 200px;
@@ -155,40 +148,9 @@
   /* border-radius: 50%; */
   transition: 0.5s;
 }
-.position-2{
-  position: relative ;
-  float: left;
-  margin-top: 100px;
-  margin-left: 80%;
-  padding-left: 20px ;
-  top: 20%;
-  left: 10%;
-  height: 200px;
-  width: 200px;
-  transform: translate(-50%, -50%);
-  transform-style: preserve-3d;
-  perspective: 600px;
-  /* border-radius: 50%; */
-  transition: 0.5s;
+#first_circle_card{
+  margin-left: 20%;
 }
-
-.position-3{
-  position: relative ;
-  float: left;
-  margin-top: 100px;
-  margin-left: 80%;
-  padding-left: 20px ;
-  top: 20%;
-  left: 10%;
-  height: 200px;
-  width: 200px;
-  transform: translate(-50%, -50%);
-  transform-style: preserve-3d;
-  perspective: 600px;
-  /* border-radius: 50%; */
-  transition: 0.5s;
-}
-
 
 .circle_card:hover .circle_card-front {
   transform: rotateX(-180deg);
@@ -257,4 +219,16 @@
 .circle_card-back a:hover {
   color: #000000;
   background-color: #fff;
+}
+.caption{
+  position: absolute;
+  bottom: -50px;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+
+}
+footer li{
+  display: block;
+  width: 100%;
 }

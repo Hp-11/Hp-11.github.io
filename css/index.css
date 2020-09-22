@@ -1,0 +1,404 @@
+nav{
+  height:60px;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(rgb(7, 7, 7),rgba(10, 10, 10, 0.842),rgba(10, 10, 10, 0.842),transparent);
+  color: #ffffff;
+  position: fixed;
+  right: 0%;
+  z-index: 100;
+}
+
+.sbody{
+  margin-left: 0px;
+}
+
+.navbar-name{
+  display: none;
+}
+
+.logo{
+  font-size: large;
+  float: left;
+  padding: 20px;
+  margin-top: -10px;
+}
+.logo-name{
+  float: left;
+  font-size: large;
+  padding: 20px;
+  margin-top: -10px;
+  display: none;
+}
+.sidenav{
+  display: none;
+}
+.sidenav-menu{
+  display: none;
+}
+.links-list{
+  justify-content: center;
+  list-style: none;
+  font-size: large;
+  float: right;
+margin-right: 5%;
+}
+.links-list li{
+  float: left;
+  padding:20px;
+margin-top: -10px;
+}
+.links-list a{
+ color: #ffffff;
+ text-decoration: none;
+}
+
+
+/* body styling */
+body{
+    background-color: rgb(0, 0, 0);
+}
+footer{
+  position: absolute;
+    height: 400px;
+    bottom: 0;
+    background-image: linear-gradient(rgba(65, 69, 71, 0.555),rgba(84, 96, 100, 0.733),rgba(85, 97, 107, 0.555));
+}
+.top-slides{
+  margin-top: 100px;
+    background-color: rgb(0,0,0);
+    /* background-image: url("\../images/space-origin.jpg"); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30%;
+}
+
+.carousel-item img{
+    position: relative;
+    justify-content: center;
+width: 70%;
+height: 450px;
+margin-top: 1%;
+margin-bottom: 1%;
+margin-left: 15%;
+margin-right: 15%;
+}
+.carousel-caption{
+  font-size: 50px;
+}
+.carousel-caption h3{
+  font-size: 40px;
+}
+.carousel-indicators{
+  text-decoration-style: dashed;
+}
+.profile{
+  margin-top: 100px;
+  height: 400px;
+}
+.profile-img img{
+  float: left;
+  height: 350px;
+  width: 250px;
+  margin-left: 200px;
+  margin-top: 50px;
+  border-color: #f3eaf0;
+  border-width: 2px;
+}
+.bio-discription{
+  float: right;
+  width: 60%;
+  font-size: 20px;
+  margin-top: 50px;
+  color: rgba(11, 135, 192, 0.938);
+
+}
+.contact-links{
+  font-size: 40px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+.contact-links i{
+  margin-left: 20px;
+}
+.contact-links i:hover{
+  color: #f3eaf0;
+}
+.mycard{
+    height: 40%;
+    margin-left: 10%;
+}
+
+.position2{
+    position: relative ;
+    margin-top: 250px;
+    margin-left: 10%;
+    top: 40%;
+    left: 10%;
+    height: 380px;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+  }
+  .profilecard:hover .profilecard-front {
+    transform: rotateX(-180deg);
+  }
+  .profilecard:hover .profilecard-back {
+    transform: rotateX(0deg);
+  }
+  
+  .profilecard-front {
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+  
+  }
+  .profilecard-front h2 {
+    margin: 20% auto 35% auto;
+    /* position: absolute; */
+    margin-top: 120%;
+    text-align: center;
+    font-size: 26px;
+    color: whitesmoke ;
+  }
+  .profilecard-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 2;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    color:#ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+  }
+  
+  .profilecard-back h2 {
+    margin: 20% auto 35% auto;
+    font-size: 26px;
+    line-height: 20px;
+  }
+  .profilecard-back h2 span {
+    font-size: 14px;
+    line-height: 6px;
+  
+  }
+  
+  .profilecard-back a {
+    height: 10px;
+    width: 20px;
+    padding: 5px 0px;
+    border-radius: 2px;
+    line-height: 1px;
+  }
+  .profilecard-back a:hover {
+    color:rgb(10, 226, 241);
+    background-color: rgb(8, 8, 8);
+  }
+  /* social buttons in profile card */
+  .social-icons{
+    display: block;
+  }
+
+  /* category cards list */
+  .category_list{
+    position: relative;
+    margin-top: 150px;
+
+  }
+.category_list ul{
+  list-style: none;
+}
+.category_list ul li a{
+  text-decoration: none;
+}
+.category_list ul li{
+  margin-left: 15%;
+  justify-content: center;
+  display: inline;
+  font-size: 25px;
+  color: #0330f8;  
+}
+.category_list ul li a:hover{
+  color: #f3eaf0;
+}
+.category_list i{
+  position: relative;
+  top: -70px;
+  left: 8%;
+  font-size: 90px;
+
+}
+
+
+@media only screen and (min-width:1000px)
+{ 
+  .logo{
+    display: none;
+  }
+  .logo-name{
+    position: relative;
+    top: -10px;
+    display: block;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .mycard{
+    display: none;
+  }
+  .glyphicon-menu-hamburger{
+    display: none;
+  }
+}
+  @media only screen and (max-width:900px)
+{ nav{
+     height: 50px;    
+  }
+  .navbar-name{
+    display: block;
+    position: absolute;
+    font-size: 20px ;  
+    margin-top: 10px;
+    margin-left: 40%;
+    }
+    .logo{
+      display: none;
+    }
+    .logo-name{
+      display: none;
+    }
+    
+    .carousel-caption{
+      font-size: 30px;
+    }
+    .carousel-caption h3{
+      font-size: 20px;
+    }
+    .carousel-item img{
+  width: 70%;
+  height: 30%;
+  }
+  .sidenav-menu , .sidenav{
+    display: block;
+  }  
+  .glyphicon{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+  }  
+  .profile{
+    display: none;
+  }
+  .mycard{
+    display: block;
+  }
+  .position2{           
+        height: 240px;
+        width: 190px;
+        margin-top: 150px;
+       }
+     
+  .profilecard-back h2 {
+        margin: 10% auto 25% auto;
+        font-size: 20px;
+        line-height: 15px;
+      }
+  .profilecard-front h2{
+        margin-top: 100%;
+    }  
+  .profilecard-back h2 span {
+     
+        font-size: 12px;
+        line-height: 3px;
+      
+      }
+
+  .category_list ul li{
+       margin-top: 10%;
+       margin-bottom: 10%;
+       display: flex;
+     } 
+     
+  .links-list{
+      display: none;
+    }
+
+ }
+
+
+
+/* style for side menu */
+#side-logo{
+  position: absolute;
+  float: left;
+  color: #fff;
+  z-index: 1;
+  margin-top: -65px;
+  margin-left: -25px;
+}
+
+
+    .sidenav {
+      height: 100%;
+      width: 0; 
+      position: fixed; 
+      z-index: 100; 
+      top: 0; 
+      left: 0;
+      background-image: repeating-linear-gradient(black,darkblue,skyblue); 
+      overflow-x: hidden; 
+      padding-top: 60px; 
+      transition: 0.5s; 
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #0330f8;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f3eaf0;
+      font-weight: bolder;    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
