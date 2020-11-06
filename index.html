@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <link rel="stylesheet" href="css/index.css" >   
          <link rel="stylesheet" href="css/listcard.css" >
-
+         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+         <script type="text/javascript">
+         particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.25,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+         </script>
          
 </head>
 <body>
@@ -20,9 +23,8 @@
 <nav class="navigation">
   <!-- for large screens -->
   <ul class="links-list">
-    <li><a href="#">who i am</a></li>
-    <li><a href="#">What i done</a></li>
-    <li><a href="#">certies</i></a></li>
+    <li><a href="#whoiam">Who i am</a></li>
+    <li><a href="#whatido">What i do</a></li>
     <li><a class="social-icon" data-tooltip="email@gmail.com" href="mailto:harshpundir0103@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
     <li><a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/#/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
     <li><a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/harshpundir99@gmail.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -31,15 +33,14 @@
   <div class="navbar-name">
     HARSH PUNDIR
   </div>
-  <div class="logo">HP </div>
+  <!-- <div class="logo">HP </div> -->
   <div class="logo-name">Harsh Pundir</div>
    <!-- for small screens -->
   <div class="sidenav" id="mySidenav">
     <a href="#" id="side-logo" > HP</a>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">who i am</a>
-    <a href="#">what i do</a>
-    <a href="#">certies</a>
+    <a href="#whoiam">who i am</a>
+    <a href="#whatido">what i do</a>
     <a class="social-icon" data-tooltip="email@gmail.com" href="mailto:harshpundir0103@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/harsh-pundir-3958b219a/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/harshpundir99@gmail.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -49,153 +50,167 @@
   
   <span onclick="openNav()"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
 </nav>
-
-
+<div ></div>
+<div id="banner-image-of-logo">
+  <div id="particles-js"></div>
+  <div id="upper-text" >
+  <h5>Hi, I am Harsh i like to do :</h5>
+  <h1>CREATIVE STUFF</h1>
+  <div id="attractive-heading">
+  
+  <div class="text">
+    <p>
+      <h2> WHICH INCLUDE</h2>
+    </p>
+    <p>
+      <h2 class="word wisteria">EXPERIMENTATION</h2>
+      <h2 class="word belize">EXPLORATION</h2>
+      <h2 class="word pomegranate">INNOVATION</h2>
+    </p>
+  </div>
+  </div>
+  </div>
+  <!-- <img id="full-screen"  src="images/bluewave.jpg" style="width:100%; height:500px;"> -->
+  <!-- <img id="small-screen" src="images/CC-logo.jpg" style="width:100%; height:500px;">  for diff images in small devices and full screen devices also coment out in index.css -->
+  <div class="circle"></div>
+    <div class="line"></div>
+    <div class="down-arrow"></div>
+    <div class="down-arrow-2"></div>
+</div>
 <div id="main">
-<!-- /nav bar -->
-
-<div class="top-slides">
-<div class="carousel-container">
- 
-<div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-     <a href="#">
-      <img src="images/ourteam.jpg" alt="1">
-      <div class="carousel-caption">
-        <h3>Title</h3>
-        <p>Caption</p>
-      </div>
-     </a>
+  
+  <!-- ===================================who i am ============================ -->
+  <section id="whoiam">
+    <div class="container">
+      <div class="line"></div>
+      <h2>Who I am </h2>
     </div>
-    <div class="carousel-item">
-      <img src="images/cyberstalk.jpg" alt="2">
-      <div class="carousel-caption">
-        <h3>Title</h3>
-        <p>Caption</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/blog.jpg" alt="3">
-      <div class="carousel-caption">
-        <h3>Title</h3>
-        <p>Caption</p>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-</div>
-
-</div>
-
-
-<!-- body below slides -->
-<!-- profile for big screens  -->
-<div class="profile">
-  <div class="profile-img">
-    <img src="images/hp-profile.jpg" >
-  </div>
-  <div class="bio-discription">
-    If you are looking for the one with high energy and ready to do approach person,you scroll to right person.
-    I have been working on my web development skills from a year now and knows Creativity is a catalyst for output.
-     Being a student of Electronics I understand , the growth of technology is nowhere going to be slow down and 
-     neither would be my efforts to learn and grow . Each new challege excites me to do that even better than anyone can .
-     I will be G.O.A.T of my all versions each day.
-    <div class="contact-links">
-     <a class="social-icon" data-tooltip="email@gmail.com" href="mailto:harshpundir0103@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-     <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/#/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-     <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/harshpundir99@gmail.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-     <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/silent_knight_13" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </div>
-  </div>
-
-</div>
-<!-- profile card for small size displays -->
-<div class="mycard">
-<div class="col">
-    <div class="profilecard position2">
-      <div class="profilecard-front" id="cardphoto-Harsh">
-       <h2>Harsh Pundir</h2></div>
-       <div class="profilecard-back ">
-         <h2 >Harsh Pundir <br><br><span>
-          
-          <br><br> If you are looking for the one with high energy and ready to do approach person,you scroll to right person.
+    <div class="profile">
+        <div class="profile-img">
+          <img src="images/hp-profile.jpg" >
+        </div>
+        <div class="bio-discription">
+          If you are looking for the one with high energy and ready to do approach person,you scroll to right person.
           I have been working on my web development skills from a year now and knows Creativity is a catalyst for output.
            Being a student of Electronics I understand , the growth of technology is nowhere going to be slow down and 
            neither would be my efforts to learn and grow . Each new challege excites me to do that even better than anyone can .
-           I try to be G.O.A.T of my all versions each day.
-         </span></h2>
-       </div>
-     </div>
-  </div>
-</div>
-
-
-<div  class="container">
-  
-
-<!-- circular cetogery fields -->
-<div class="category_list">
-  <ul >
-    <li>
-    <a href="achievements.html" >
-      <i class="glyphicon glyphicon-briefcase"></i>Career 
-    </a>
-  </li>
-    <li><a href="skills.html"> 
-      <i class="glyphicon glyphicon-knight"></i>  Skills
-    </a></li>
-    <li><a href="ffacts.html">
-      <i class="glyphicon glyphicon-sunglasses"></i>Fun Facts 
-    </a></li>
-  </ul>
-
-</div>
-
-</div>
-
-<!--  my projects slider-->
-<div class="myupdates">
-  <div class="outer_orange_box">
-    The Auther
-    <div class="aurther_pic">
-      <img src="images/blog.jpg">
-    </div>
-    <div class="inner_white_box">
-      <h6><bolder>Name</bolder></h6>
-      <p class="aurther_bio">
-        discription
-       
-      </p>
-    </div>
-
-  </div>
-  </div>
-
-</div>
-<!-- footer of page -->
-<footer class="footer" >
-  
+           I will be G.O.A.T of my all versions each day.
+          <div class="contact-links">
+           <a class="social-icon" data-tooltip="email@gmail.com" href="mailto:harshpundir0103@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+           <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/#/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+           <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/harshpundir99@gmail.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+           <a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/silent_knight_13" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+     </div> 
  
-</footer>
+<!--====================== links glyphicons============================ -->
+  <div class="container">
+    <div class="category_list">
+      <ul >
+        <li>
+        <a href="#career" >
+          <i class="glyphicon glyphicon-briefcase"></i><span>Career </span>
+        </a>
+      </li>
+        <li><a href="#skills"> 
+          <i class="glyphicon glyphicon-knight"></i> <span>Skills</span>
+        </a></li>
+        <li><a href="#ffacts">
+          <i class="glyphicon glyphicon-sunglasses "></i><span>Fun Facts </span>
+        </a></li>
+      </ul>
+    
+    </div>
+  </div>
+  </section>
 
+  <!-- ======================================what i do======================= -->
 
+  <section id="whatido" class="container">
+      <div class="line"></div>
+    <h2>What I Do </h2>
+    <p>
+      I am an explorer who search for new skills and experiments to implement them along side with upgrading my
+      learned skills . Things i am good at are :<br>
+      <ul class="things-i-good-at-list">
+        <li><i class="glyphicon glyphicon-ok"></i> Front-End Web Developement </li>
+        <li><i class="glyphicon glyphicon-ok"></i> Web Designing </li>
+        <li><i class="glyphicon glyphicon-ok"></i> UI/UX Designing </li>
+        <li><i class="glyphicon glyphicon-ok"></i> Image Editing </li>
+        <li><i class="glyphicon glyphicon-ok"></i> Graphic Designing </li>
+      </ul>
+    </p>
+  </section>
+  
+<!-- ============================== my projects ======================= -->
+<section >
+<div id="prj" class="container">
+  <div class="line"></div>
+      <h2>My Projects </h2>
+<p class="project">
+  Here are some of my top projects : 
+<ul class="project-list">
+  <li><br> <h3 id="web-project-title">Web-Dev :</h3>
+    <ul style="margin-left: -25%; margin-top: -10px;" id="web-projects">
+      <li>
+        <a href="https//www.paca.org.in"> <div class="card project-card">
+            <div class="project-pic"><img src="images/Ellipse 3.svg"></div>
+            <div class="project-discription">PACA : People Against Cyber Abuse</div>
+        </div></a>
+      </li>
+     <li>
+      <a href="https//www.celebrated-media.co.in">
+         <div class="card project-card">
+          <div class="project-pic"><img src="images/Ellipse 3.svg"></div>
+          <div class="project-discription"> CELEBRATED! : Let the world know you</div>
+         </div>
+      </a>
+     </li>
+    </ul>
+  </li>
+</ul>
+</p>
 </div>
+</section>
+  <!-- ================================== career====================== -->
+  <section id="career" class="container">
+      <div class="line"></div>
+      <h2>My Academic Career </h2>
+      <p>
+        As per the chronical order my studies happened as follows:
+        <ul>
+         <li ><i class="glyphicon glyphicon-time">
+         </i> <span id="activecareer"> University : 2022 : Punjab Engineering College (DTU) Chandigarh : 7.1(CGPA - of 10)</span>
+              <ul>
+                <li> <i class="glyphicon glyphicon-th-list"></i>B.tech in Electronics and Communication </li>
+              </ul>
+        </li>
+         <li><i class="glyphicon glyphicon-ok"></i> High-school (10+2) : 2018 : Air Force School Jammu : 86.4%
+          <ul>
+            <li> <i class="glyphicon glyphicon-th-list"></i>Non-Medical with Computer Science </li>
+          </ul> </li>
+         <li><i class="glyphicon glyphicon-ok"></i> Secondary-school : 2016 : Air Force School Jammu : 9.2(CGPA - of 10) 
+          <ul>
+            <li> <i class="glyphicon glyphicon-th-list"></i>Science and Mathematics </li>
+          </ul></li>            
+        </ul>
+
+      </p>
+  </section>
+</div>      
+
+
+
  <!-- JS, Popper.js, and jQuery -->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
 <script>
  function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -205,6 +220,79 @@
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+// =============================== jscript for heading changes ==================
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
 </script>
 </body>
 </html>
