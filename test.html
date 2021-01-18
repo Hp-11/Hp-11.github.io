@@ -1,137 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css" >   
+ 
+  <style>
+    .carousel{
+      width: 50%;
+      height: 10%;
+      margin: auto;
+      overflow-x: visible                                                               ;
+    }
+    .carousel .item{
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
 
-   <head>
-      <script src="js/test.js" ></script>
-      <style>
-       @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+<div class="container">
+  <h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
 
+      <div class="item active">
+        <img src="images/blog.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
 
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-}
+      <div class="item" id="prj">
+      <a href="https//www.paca.org.in"> <div class="card project-card">
+                <div class="project-pic"><img src="images/Ellipse 3.svg" style="margin: auto;"></div>
+        <div class="carousel-caption">
+          <div class="project-discription">PACA : People Against Cyber Abuse</div>
+            </div>
+        </div>
+      </a>
+      </div>
 
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-}
-
-.letter {
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
-      </style>
-   </head>
-
-   <body>
-   
-      <div class="text">
-         <p>
-           <span class="word wisteria">tasty</span>
-           <span class="word belize">wonderful</span>
-           <span class="word pomegranate">fancy</span>
-           <span class="word green">beautiful</span>
-           <span class="word midnight">cheap</span>
-         </p>
-       </div>
-       
-   </body>
-   <script>
-      var words = document.getElementsByClassName('word');
-var wordArray = [];
-var currentWord = 0;
-
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-  splitLetters(words[i]);
-}
-
-function changeWord() {
-  var cw = wordArray[currentWord];
-  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
-  for (var i = 0; i < cw.length; i++) {
-    animateLetterOut(cw, i);
-  }
+      <!-- <div class="item">
+      <a href="https//www.celebrated-media.co.in">
+          <div class="card project-card">
+           <div class="project-pic"><img src="images/Ellipse 3.svg"></div>
+           <div class="project-discription"> CELEBRATED! : Let the world know you</div>
+          </div>
+      
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </a>
+      </div> -->
   
-  for (var i = 0; i < nw.length; i++) {
-    nw[i].className = 'letter behind';
-    nw[0].parentElement.style.opacity = 1;
-    animateLetterIn(nw, i);
-  }
+    
+      <div class="item">
+        <img src="images/cyberstalk.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
   
-  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
-}
+    </div>
 
-function animateLetterOut(cw, i) {
-  setTimeout(function() {
-		cw[i].className = 'letter out';
-  }, i*80);
-}
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
-function animateLetterIn(nw, i) {
-  setTimeout(function() {
-		nw[i].className = 'letter in';
-  }, 340+(i*80));
-}
-
-function splitLetters(word) {
-  var content = word.innerHTML;
-  word.innerHTML = '';
-  var letters = [];
-  for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement('span');
-    letter.className = 'letter';
-    letter.innerHTML = content.charAt(i);
-    word.appendChild(letter);
-    letters.push(letter);
-  }
-  
-  wordArray.push(letters);
-}
-
-changeWord();
-setInterval(changeWord, 4000);
-
-
-   </script>
+</body>
 </html>
