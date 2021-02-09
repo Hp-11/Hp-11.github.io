@@ -1,0 +1,25 @@
+.uploads .main-title h2{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif ;
+    margin: auto;
+}
+.uploads .main-title .line{
+    position: relative;
+    top: 10px;
+} 
+.all_up .photo_art_gallry .photos-list ul li img{
+    /* best results with photo resolution of 626 * 432 ratio */
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.all_up ul{
+    height: 400px;
+    overflow-y: scroll;
+}
+.all_up .model-images ul li img{
+    width: 300px;
+    height: 200px;
+    float: left;
+}

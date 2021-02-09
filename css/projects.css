@@ -1,0 +1,52 @@
+.projects{
+    margin-bottom: 5%;
+  }
+  .projects h2{
+    text-align: center;      
+    font-family: 'Times New Roman', Times, serif ;
+  }
+  .projects .line{
+    position: relative;
+    top: 10%;
+  }
+  #projects-list-full-view{
+    margin-top: 5%;
+  }
+  #projects-list-full-view .overview img{
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    height: 20%;
+    
+  }
+  #projects-list-full-view .overview p{
+    float: right;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 5%;
+    color: #77ebff98;
+  }
+  #projects-list-full-view .tools-used  p{
+    float: left;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #projects-list-full-view .tools-used ul  {
+    text-align: left;
+    margin-left: 50%;
+    font-size: 18px;
+    color: #03d3f8;
+  }
+  #projects-list-full-view .tools-used .inner-list{
+    margin-left: 10%;
+    font-size: 15px;
+    color: rgba(105, 105, 105, 0.671);
+  }
+  #projects-list-full-view .tools-used .inner-list i{
+    color: rgba(0, 255, 255, 0.596);
+  }
+  #projects-list-full-view .tools-used .inner-list li span{
+    color: rgba(240, 248, 255, 0.836);
+    font-weight: bold;
+    margin-left: 2px;
+  }

@@ -54,6 +54,9 @@ section{
   padding: 20px;
  
 }
+.logo-name a{
+  color: #ffffff;
+}
 .sidenav{
   display: none;
 }
@@ -136,8 +139,27 @@ footer{
 -webkit-animation-name: fadeInLeft;
 animation-name: fadeInLeft;
 } 
+/* =====================================side links ============================================= */
+.side-links{
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed ;
+  right: 10px;
+  top: 40%;
+  z-index: 100;
+}
+.side-links li {
+  margin-bottom: 20px;
 
-
+}
+.side-links li a{
+ color: white;
+}
+.side-links li a:hover{
+  color: #08f2fa;
+}
 /* ====================================================moving arrow====================================== */
  .down-arrow{
    position: relative;
@@ -238,17 +260,18 @@ animation-name: fadeInLeft;
   float: left;
   height: 350px;
   width: 250px;
-  margin-left: 200px;
+  margin-left: 150px;
   margin-top: 50px;
   border-color: #f3eaf0;
   border-width: 2px;
 }
 .bio-discription{
-  float: right;
+  float: left;
   width: 60%;
   font-size: 22px;
   font-weight: bolder;
   margin-top: 50px;
+  margin-left: 30px;
   color: rgba(35, 61, 73, 0.938);
 
 }
@@ -330,6 +353,9 @@ animation-name: fadeInLeft;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 5px;
     margin-left: 40%;
+    }
+    .navbar-name a{
+      color: #ffffff;
     }
    
     .logo-name{
@@ -697,6 +723,7 @@ footer {
   background: rgb(39, 39, 39);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 20px 0;  
+  text-align: center;
 }
 .contact-about h3{
   color: #6982f3;
@@ -746,3 +773,29 @@ footer .source_code{
   justify-content: center;
   padding: 10px;
 }
+
+
+/* ============================================================= centeral carousel =============================================== */
+.uploads .carousel
+{
+      width: 70%;
+      height: 40%;
+      margin: auto;
+  }
+.uploads .carousel .item
+{
+      height: 500px;
+  }
+.uploads .carousel-caption
+{
+      background-color: rgba(0, 0, 0, 0.692);
+      width: 40%;
+      margin-left: -20%; 
+  }
+.uploads .aling_carousel_content
+{
+      text-align: left;
+      width: 80%;
+      padding-left: 10px;
+      float: inline-end;
+ }
